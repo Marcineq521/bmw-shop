@@ -1,0 +1,12 @@
+1 - BMW i4 M50
+2 - BMW iX
+3  BMW iX M60
+4 BMW i7
+5  BMW i4
+6  BMW X7
+7 BMW X7 M60i xDRIVE
+8  BMW X4 M
+9 BMW serii 8 Gran Coupé M
+10  BMW serii 8 Cabrio M
+11  BMW M440i xDrive Gran Coupé
+12 BMW M235i xDrive Gran Coupé

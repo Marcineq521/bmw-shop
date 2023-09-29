@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+  
+}
+
+nav{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: 1px solid rgb(243, 239, 239);
+    z-index: 1;
+
+}
+
+nav ul{
+    padding-top: 30px;
+    padding-left: 25px;
+    display: flex;
+    list-style-type:none;
+    
+
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a{
+    transition: 1s;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav img{
+    position: absolute;
+    top: 25px;
+    right: 500px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.responsive_menu{
+    position: absolute;
+    left: 0;
+    display: none;
+    height: 100%;
+    width: 160px;
+    z-index: 1;
+}
+
+.responsive_menu ul{
+    list-style-type:none;
+    margin-left: 25px;
+    
+}
+
+.responsive_menu ul li{
+    margin: 20px 0;
+    position: relative;
+}
+
+.responsive_menu ul li a{
+    transition: 1s;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.responsive_menu img{
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+    margin-top: 15px;
+
+}
+
+.responsive_menu .icons-container{
+  
+    position: absolute;
+    margin-top: 40px;
+    left: 20px;
+    width:60px;
+    height: 200px;
+    display: inline-block;
+    
+}
+
+.responsive_menu .icons-container i::after{
+
+    content: '';
+    position: absolute;
+    bottom:-4px;
+    left: 0;
+    margin-top: 20px;
+    height: 4px;
+    width:0;
+    background-color: rgb(72, 72, 238);
+    opacity: 0.8;
+    transition: 0.2s;  
+
+}
+
+.responsive_menu .icons-container i{
+
+    position: relative;
+    padding: 30px 10px;
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+
+.responsive_menu .icons-container i:hover::after {
+    width: 100%;
+}
+
+.icons-container{
+   display: flex;
+    right: 800px;
+    width:240px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icons-container i{
+    position: relative;
+    padding: 20px 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    
+}
+
+.icons-container i:hover{
+    background-color: gray;
+    transition: 0.4s;
+
+}
+
+.icons-container i::after {
+
+    content: '';
+    position: absolute;
+    bottom:-28px;
+    left: 0;
+    margin-top: 37px;
+    height: 4px;
+    width:0;
+    background-color: rgb(72, 72, 238);
+    opacity: 0.8;
+    transition: 0.2s;  
+}
+
+.icons-container i:hover::after {
+    width: 100%;
+}
+
+a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    margin-top: 37px;
+    height: 4px;
+    width: 0;
+    background-color: rgb(72, 72, 238);
+    opacity: 0.8;
+    transition: 0.2s;
+
+}
+
+a:hover::before{
+    width: 100%;
+}
+
+.cars-container{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 1800px;
+    height: 200vh;
+    margin: auto;
+}
+
+.cars-container img{
+    margin-top: 100px;
+    width: 580px;
+    height: 320px;
+}
+
+.product{
+    width: 580px;
+    height: 720px; 
+    margin-left: 10px;
+    position: relative;
+}
+
+.product-name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.product-description{
+    text-align: justify;
+}
+
+.price{
+    float: right;
+    width: 200px;
+    height: 40px;
+    color: rgb(14, 170, 14);
+    font-size: 24px;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    position: relative;
+    
+}
+
+.product.on-sale .price-on-sale{
+    display: block;
+}
+
+.product.on-sale .price{
+    color: black;
+}
+
+.product.on-sale .price::before{
+    display: block;
+
+}
+
+.price-on-sale{
+    display: none;
+    float: right;
+    width: 150px;
+    height: 50px;
+    color: rgb(14, 170, 14);
+    font-size: 28px;
+    text-align: right;
+    right: 16px;
+    position: absolute;
+}
+
+.price::before{
+    
+    position: absolute;
+    display: none;
+    top: 15px;
+    right: 0;
+    transform: rotate(-7deg);
+    content: '';
+    height: 2px;
+    background-color: red;
+    width: 110px;
+}
+
+
+
+.configure-btn{
+    height: 80px;
+    width: 240px;
+    margin-left: 170px;
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(15, 111, 207);
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.configure-btn:hover{
+    background-color: rgb(7, 87, 166);
+}
+
+
+
+
+@media screen and (max-width:1500px){
+    .cars-container{
+        margin-left: 180px;
+    }
+    .icons-container{
+        display: none;
+        
+    }
+    nav,nav ul,nav ul li, nav ul li a{
+        display: none;
+    }
+
+    .responsive_menu{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .responsive_menu{
+        display: inline-block;
+        top: 0;
+        height:120px;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .responsive_menu ul{
+        list-style-type:none;
+        margin-left: 25px;
+        position:absolute;
+        top: 0;
+        left: 70px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+        
+    }
+    
+    .responsive_menu ul li{
+        margin: 10px 25px;
+        position: relative;
+    }
+    
+    .responsive_menu ul li a{
+        transition: 1s;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;
+        color: gray;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .responsive_menu img{
+        height: 60px;
+        width: 60px;
+        margin-top: 15px;
+        margin-left: 5px;
+    
+    }
+    
+    .responsive_menu .icons-container{
+      
+        position: absolute;
+        bottom: -60px;
+        left: 240px;
+        width:60px;
+        height: 200px;
+        display:flex;
+        
+    }
+    
+    .responsive_menu .icons-container i::after{
+    
+        content: '';
+        position: absolute;
+        bottom:-4px;
+        left: 0;
+        margin-top: 20px;
+        height: 4px;
+        width:0;
+        background-color: rgb(72, 72, 238);
+        opacity: 0.8;
+        transition: 0.2s;  
+    
+    }
+    
+    .responsive_menu .icons-container i{
+    
+        position: relative;
+        padding: 18px 10px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin-top: 25px;
+    
+    }
+    
+    .responsive_menu .icons-container i:hover::after {
+        width: 100%;
+    }
+
+    .cars-container{
+        margin-top: 40px;
+    }
+    
+
+}
+
+
+
