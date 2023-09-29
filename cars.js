@@ -1,7 +1,7 @@
 const cars=[
     {
         id: 0,
-        name: "BMW e46",
+        name: "BMW i4 M50",
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
         dolores eaque. Eligendi ab officia minus.`,
         price: 29999.99,
