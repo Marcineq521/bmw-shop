@@ -12,7 +12,7 @@ const cars=[
       {
         id: 1,
         name: "BMW iX",
-        description: `fdgsdfgdfgfgdfgd 12312312123 ipsum dolor sit amet consectetur adipisicing elit. Quod,
+        description: ` sdffgdgdf ipsum dolor sit amet consectetur adipisicing elit. Quod,
         dolores eaque. Eligendi ab officia minus.`,
         price: 29999.99,
         image: "./images/2.png",
